@@ -38,7 +38,9 @@ Run the registration script and follow the prompt:
 ```bash
 python register.py
 ```
-Enter a username (e.g. alice). The webcam will capture 10 face images. Images will be saved under data/users/alice.
+Enter a username (e.g. alice). 
+Press and hold the s key to capture and save face images
+300 images will be saved under data/user/alice
 
 ### 2. Train the Model
 Train the Siamese network on registered face pairs:
@@ -75,7 +77,7 @@ NumPy
 
 $ python register.py
 Enter username to register: bob
-📷 Capturing 10 face images for user: bob
+Capturing 10 face images for user: bob
 Saved image 1/10
 ...
 
@@ -85,7 +87,7 @@ Epoch 1/10, Loss: 0.3912
 Model saved to models/siamese_model.pt
 
 $ python verify.py
-🔍 Best match: bob (score: 0.5473)
+Best match: bob (score: 0.5473)
 Verified as: bob
 
 ## To-Do (Optional Ideas)
